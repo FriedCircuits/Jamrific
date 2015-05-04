@@ -24,36 +24,49 @@ form, I can see it being usable.
 References
 ================
 Based on the work by Tony DiCola
+
 https://learn.adafruit.com/reverse-engineering-a-bluetooth-low-energy-light-bulb/explore-gatt
 
 Some of the other sites I used in my research travels
 
 To setup higher baud rate over 115200
+
 https://www.raspberrypi.org/forums/viewtopic.php?f=44&t=73673
 
 Found a way to use gatttool non-interactively
+
 http://stackoverflow.com/questions/29326597/how-to-use-gatttool-non-interactive-mode
 
 Same Issue I had in C, can't go faster than 115200
+
 https://www.raspberrypi.org/forums/viewtopic.php?f=44&t=44810
 
 Possible example to get started with BlueZ in C
+
 https://github.com/carsonmcdonald/bluez-experiments/blob/master/experiments/scantest.c
 
 Some sites I found while trying to get the HM-10 option working
+
 http://allmydroids.blogspot.com/2014/10/hm-10-hm-11-ble-bluetooth-master.html
 http://stackoverflow.com/questions/27633216/hm10-ble-change-characteristic-value-at-command-arduino
 
 For future reference
+
 https://github.com/IanHarvey/bluepy
 
 Hardware
 ================
+
 BT 4.0 USB module for RPi  (https://www.adafruit.com/products/1327)
+
 Teensy 3.1
+
 Audio Shield
+
 TFT LCD (Optional for FFT display)
+
 Raspberry Pi 2, but might be okay on the original.
+
 Colorific Bulb (http://www.amazon.com/Colorific-Controlled-Dimmable-Android-Bluetooth/dp/B00KG1JYCI)
 
 
@@ -86,11 +99,16 @@ Installation
 =========================
 
 -Get BlueZ installed
+
 -Use Tony's guide to get you set-up with BlueZ and the bulb tested
+
 -Makes changes to get the higher baud rate on the RPi
 
+
 -Set-up Teensy with Audio shield and test with sketch
+
 -Make sure you can see the serial input from the Teensy with Minicom or Screen
+
 
 
 
@@ -100,9 +118,13 @@ To Do
 ================
 
 Code clean up and comments
+
 Support multiple bulbs
+
 Try direct integration with BlueZ in C++
+
 Improve colour patterns or take better advantage of the FFT data
+
 
 
 Notes
